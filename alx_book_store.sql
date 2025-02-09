@@ -12,8 +12,8 @@ CREATE TABLE Authors (
     author_name VARCHAR(215) NOT NULL
 );
 
--- Create the Books table
-CREATE Table Books (
+-- Create the Books table (with 'title' column)
+CREATE Table IF NOT EXISTS Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     Title VARCHAR(130) NOT NULL,
     author_id INT,
